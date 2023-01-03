@@ -106,7 +106,6 @@ public class GamePanel extends JPanel implements ActionListener {
             y[i] = y[i - 1];
         }
 
-        //tried lines 123- 135 first, but the snake couldnt turn left
         //create a switch direction, create case for each possible direction
         switch(direction){
             case 'U':
@@ -117,6 +116,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 break;
             case 'L':
                 x[0] = x[0] - UNIT_SIZE;
+                break;
             case 'R':
                 x[0] = x[0] + UNIT_SIZE;
                 break;
